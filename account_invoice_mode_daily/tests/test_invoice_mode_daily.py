@@ -3,8 +3,10 @@
 
 from odoo import tools
 from odoo.tests.common import SavepointCase
+from odoo.tests import tagged
 
 
+@tagged('post_install', '-at_install')
 class TestInvoiceModedaily(SavepointCase):
     @classmethod
     def setUpClass(cls):
